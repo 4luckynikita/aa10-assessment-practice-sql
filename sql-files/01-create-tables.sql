@@ -16,7 +16,7 @@ CREATE TABLE customers (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name TEXT,
     last_name TEXT,
-    phone TEXT
+    phone INTEGER
 );
 
 CREATE TABLE purchases (
