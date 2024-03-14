@@ -20,7 +20,7 @@ CREATE TABLE customers (
 );
 
 CREATE TABLE purchases (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER,
     customer_id INTEGER REFERENCES customers(id) ON DELETE CASCADE,
     tool_id INTEGER REFERENCES tools(id) ON DELETE CASCADE,
     quantity INTEGER
